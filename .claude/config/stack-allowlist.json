@@ -1,0 +1,12 @@
+﻿{
+  "version": "1.0",
+  "runtime": {
+    "node": ">=18.18",
+    "packageManager": "npm|pnpm|yarn"
+  },
+  "source": "docs/01-prd/<tu-prd>.md#requisitos-tecnicos",
+  "allow": [],
+  "deny_examples": [],
+  "rationale": {},
+  "_comment": "Este archivo es la allowlist real de dependencias, generada a partir de este template por `factory-build init` (o completada a mano / vÃ­a /factory-build-setup). El hook `stack-guard.sh` la lee en cada Write/Edit sobre package.json y rechaza cualquier paquete que no figure en `allow`. Rellena `allow` con lo que el PRD tÃ©cnico autoriza; usa `deny_examples` para documentar rechazos explÃ­citos y `rationale` para justificar excepciones puntuales."
+}

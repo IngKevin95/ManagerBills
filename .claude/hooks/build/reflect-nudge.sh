@@ -1,0 +1,1 @@
+C:/Users/kevin/AppData/Roaming/npm/node_modules/@factory/factory-spec-build/hooks/build/reflect-nudge.sh

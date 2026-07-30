@@ -1,0 +1,1 @@
+C:/Users/kevin/AppData/Roaming/npm/node_modules/@factory/factory-spec-build/agents/build/wiring-adversarial-verifier.md
