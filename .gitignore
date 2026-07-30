@@ -1,0 +1,43 @@
+# ── factory-vertical (auto) ───────────────────────────
+.claude/skills/factory/
+.claude/agents/factory/
+.claude/hooks/factory.json
+.claude/.factory-version
+docs/.reviews/
+docs/.flow-state.json
+docs/.factory-suggestions.md
+# ── /factory-vertical ─────────────────────────────────
+
+node_modules/*
+dist/
+
+# ── factory-build-harness (auto) ───────────────────────
+.claude/state/build-state.json
+.claude/agents/build/
+.claude/hooks/build/
+.claude/skills/building-a-micro-change/
+.claude/skills/building-a-slice/
+.claude/skills/openspec-apply-change/
+.claude/skills/openspec-archive-change/
+.claude/skills/openspec-bulk-archive-change/
+.claude/skills/openspec-complete-artifacts/
+.claude/skills/openspec-continue-change/
+.claude/skills/openspec-explore/
+.claude/skills/openspec-ff-change/
+.claude/skills/openspec-new-change/
+.claude/skills/openspec-onboard/
+.claude/skills/openspec-sync-specs/
+.claude/skills/openspec-verify-change/
+.claude/skills/releasing-a-version/
+.claude/.build-harness-version
+# ── /factory-build-harness ──────────────────────
+
+# ── factory-arch-vertical (auto) ───────────────────────
+.claude/skills/factory-arch/
+.claude/agents/factory-arch/
+.claude/hooks/arch.json
+.claude/.arch-version
+docs/.reviews/
+docs/.arch-flow-state.json
+docs/.arch-suggestions.md
+# ── /factory-arch-vertical ─────────────────────────────
