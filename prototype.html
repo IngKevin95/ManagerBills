@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManagerBills - Control Financiero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Registra y controla tus finanzas de manera sencilla.">
+</head>
+<body>
+    <header class="app-header">
+        <h1>ManagerBills</h1>
+        <div class="month-selector">
+            <button id="prevMonth">&lt;</button>
+            <span id="currentMonthDisplay">Julio 2026</span>
+            <button id="nextMonth">&gt;</button>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <section class="dashboard">
+            <div class="card balance-card">
+                <h2>Balance Total</h2>
+                <p id="totalBalance">$0.00</p>
+            </div>
+            <div class="card-row">
+                <div class="card income-card">
+                    <h3>Ingresos</h3>
+                    <p id="totalIncome">$0.00</p>
+                </div>
+                <div class="card expense-card">
+                    <h3>Gastos</h3>
+                    <p id="totalExpense">$0.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="transactions-section">
+            <div class="section-header">
+                <h2>Transacciones</h2>
+            </div>
+            <div id="transactionsList" class="transactions-list">
+                <!-- Transactions will be injected here -->
+                <div class="empty-state">No hay transacciones este mes.</div>
+            </div>
+        </section>
+    </main>
+
+    <button id="fabAdd" class="fab">+</button>
+
+    <div id="transactionModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Nueva Transacción</h2>
+                <button id="closeModal" class="close-btn">&times;</button>
+            </div>
+            <form id="transactionForm">
+                <div class="form-group type-toggle">
+                    <label>
+                        <input type="radio" name="type" value="income" checked>
+                        <span class="toggle-btn income-btn">Ingreso</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type" value="expense">
+                        <span class="toggle-btn expense-btn">Gasto</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Monto</label>
+                    <input type="number" id="amount" step="0.01" min="0" required placeholder="0.00">
+                </div>
+                <div class="form-group">
+                    <label for="date">Fecha</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Categoría</label>
+                    <select id="category" required>
+                        <!-- Injected by JS -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <input type="text" id="description" placeholder="Ej. Pago de salario, Comida..." required>
+                </div>
+                <button type="submit" class="submit-btn">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
