@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "harness_phase": "active",
+  "design_source": {
+    "applies": false,
+    "confirmed": false,
+    "confirmed_by": null,
+    "confirmed_at": null,
+    "source": "",
+    "notes": ""
+  },
+  "scaffold": {
+    "confirmed": false,
+    "confirmed_by": null,
+    "confirmed_at": null,
+    "notes": ""
+  },
+  "active_slice": null,
+  "history": [],
+  "releases": []
+}

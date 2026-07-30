@@ -1,0 +1,1 @@
+C:/Users/kevin/AppData/Roaming/npm/node_modules/@factory/spec-driven-product/agents/bdd-validator.md

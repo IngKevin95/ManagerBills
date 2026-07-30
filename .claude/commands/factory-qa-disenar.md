@@ -1,0 +1,1 @@
+C:/Users/kevin/AppData/Roaming/npm/node_modules/@factory/factory-qa-testing/commands/factory-qa-disenar.md
