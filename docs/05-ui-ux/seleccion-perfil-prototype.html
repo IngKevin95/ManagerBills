@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ManagerBills - Selección de Perfil (HU-001)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../prototype.css">
+  <style>
+    .profiles-screen { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; padding: 2rem; }
+    .profiles-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+    .profile-card { width: 140px; text-align: center; cursor: pointer; transition: var(--transition); }
+    .profile-card:hover { transform: translateY(-4px); }
+    .profile-avatar { width: 90px; height: 90px; border-radius: 50%; margin: 0 auto 0.75rem auto; background: var(--card-bg); border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+    .profile-name { font-weight: 600; }
+    .profile-role { font-size: 0.8rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <main class="profiles-screen">
+    <h1>¿Quién usa ManagerBills?</h1>
+    <div class="profiles-grid">
+      <div class="profile-card">
+        <div class="profile-avatar">👤</div>
+        <div class="profile-name">Kevin</div>
+        <div class="profile-role">Administrador</div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-avatar">👤</div>
+        <div class="profile-name">Ana</div>
+        <div class="profile-role">Editor</div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-avatar">👤</div>
+        <div class="profile-name">Luis</div>
+        <div class="profile-role">Lector</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

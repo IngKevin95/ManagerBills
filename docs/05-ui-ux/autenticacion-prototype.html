@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ManagerBills - Autenticación Segura (HU-009)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../prototype.css">
+  <style>
+    .auth-screen { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+    .auth-card { width: 100%; max-width: 360px; padding: 2rem; border-radius: var(--radius); background: var(--card-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(12px); text-align: center; }
+    .auth-avatar { width: 70px; height: 70px; border-radius: 50%; margin: 0 auto 1rem auto; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+    .auth-card input { width: 100%; box-sizing: border-box; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); border-radius: 0.5rem; padding: 0.75rem 1rem; color: var(--text-main); font-size: 1rem; margin: 1rem 0; }
+    .auth-card button { width: 100%; background: var(--accent); color: #fff; border: none; padding: 0.75rem; border-radius: 0.5rem; font-weight: 600; cursor: pointer; }
+    .auth-error { color: var(--expense); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main class="auth-screen">
+    <div class="auth-card">
+      <div class="auth-avatar">👤</div>
+      <h1>Kevin</h1>
+      <input type="password" placeholder="Contraseña">
+      <p class="auth-error">Contraseña incorrecta</p>
+      <button>Ingresar</button>
+    </div>
+  </main>
+</body>
+</html>

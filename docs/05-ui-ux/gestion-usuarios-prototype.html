@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ManagerBills - Gestión de Usuarios y Roles (HU-007)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../prototype.css">
+  <style>
+    .users-panel { max-width: 700px; margin: 2rem auto; padding: 1.5rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { text-align: left; padding: 0.75rem; border-bottom: 1px solid var(--glass-border); }
+    .role-badge { padding: 0.2rem 0.6rem; border-radius: 999px; background: var(--income-bg); color: var(--income); font-size: 0.8rem; }
+    .btn-danger { background: var(--expense-bg); color: var(--expense); border: none; padding: 0.4rem 0.75rem; border-radius: 0.375rem; cursor: pointer; }
+    .btn-danger:disabled { opacity: 0.4; cursor: not-allowed; }
+    .fab { position: static; }
+  </style>
+</head>
+<body>
+  <main class="users-panel">
+    <div class="section-header" style="display:flex;justify-content:space-between;align-items:center;">
+      <h1>Gestión de Usuarios</h1>
+      <button class="fab">+</button>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Usuario</th><th>Rol</th><th></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kevin (yo)</td>
+          <td><span class="role-badge">Administrador</span></td>
+          <td><button class="btn-danger" disabled>Eliminar</button></td>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td><span class="role-badge">Contador (custom)</span></td>
+          <td><button class="btn-danger">Eliminar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
